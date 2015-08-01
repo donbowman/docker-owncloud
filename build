@@ -1,0 +1,5 @@
+#!/bin/bash
+docker kill owncloud 2>/dev/null
+docker rm owncloud 2>/dev/null
+docker rmi owncloud 2>/dev/null
+docker build --force-rm=true --rm=true -t owncloud .

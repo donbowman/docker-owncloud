@@ -1,0 +1,2 @@
+#!/bin/bash
+docker run --name owncloud -h cloud.sandvine.rocks -d -p 127.0.0.1:4000:80 --name="owncloud" -v /var/lib/owncloud/data:/var/www/owncloud/data -v /var/lib/owncloud/config:/var/www/owncloud/config owncloud
